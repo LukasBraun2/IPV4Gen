@@ -30,27 +30,27 @@ int main() {
   //Establish How many DHCPs you need to generate
   while(a == 0){
   cin >> yn;
-  if(yn == 'Y'){
-  int b = 0;
-  while(b < 100){
-  DHCP123 = b;
-  newDHCP = static_cast<ostringstream*>( &(ostringstream() << DHCP123) )->str();
-  fullDHCP = DHCP + newDHCP;
-  cout << fullDHCP << endl;
-  b++;
-    if(b == 100){
-      return 0;
-    }
-  } a++;
+    if(yn == 'Y'){
+      int b = 0;
+      while(b < 100){
+      DHCP123 = b;
+      newDHCP = static_cast<ostringstream*>( &(ostringstream() << DHCP123) )->str();
+      fullDHCP = DHCP + newDHCP;
+      cout << fullDHCP << endl;
+      b++;
+        if(b == 100){
+         return 0;
+        }
+      } a++;
   }
     if(yn == 'N'){
       int c = 0;
       while(c < 1000){
-      DHCP123 = c;
-      newDHCP = static_cast<ostringstream*>( &(ostringstream() << DHCP123) )->str();
-      fullDHCP = DHCP + newDHCP;
-      cout << fullDHCP << endl;
-      c++;
+        DHCP123 = c;
+        newDHCP = static_cast<ostringstream*>( &(ostringstream() << DHCP123) )->str();
+        fullDHCP = DHCP + newDHCP;
+        cout << fullDHCP << endl;
+        c++;
       } a++;
     }
     else {
